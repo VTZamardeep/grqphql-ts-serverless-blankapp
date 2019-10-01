@@ -1,15 +1,10 @@
 import { GraphQLServerLambda } from 'graphql-yoga'
+import * as Query from "./resolver/query/index";
+import {typeDefs} from "./schema/schema";
 
-const typeDefs = `
-  type Query {
-    hello(name: String): String
-  }
-`
 
 const resolvers = {
-  Query: {
-    hello: (_, { name }) => `Hello ${name || 'world'}`,
-  },
+  Query
 }
 
 const lambda = new GraphQLServerLambda({
