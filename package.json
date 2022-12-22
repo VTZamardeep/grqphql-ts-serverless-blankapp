@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "graphql-yoga": "^1.18.3",
-    "serverless-offline": "^5.11.0",
+    "serverless-offline": "^12.0.3",
     "source-map-support": "^0.5.10"
   },
   "devDependencies": {
